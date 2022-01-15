@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'open sans';
+}
+
+h2{
+    color: #220a8f;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+header{
+
+    width: 100%;
+    height: 700px;
+    padding: 0;
+    background: #bc4e9c;  
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.678), hsla(317, 45%, 52%, 0.623)), url(/img/portadaiu.jpg);  
+    background: linear-gradient(to right, hsla(355, 95%, 50%, 0.678), hsla(251, 96%, 47%, 0.623)), url(/img/Servicios/calculo\ de\ volumenes.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: rgba(7, 7, 199, 0.301);
+    box-shadow: 0 5px 20px 0px black;
+
+
+}
+.logo{
+    width: 200px;
+    margin: 10px;  
+}
+span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 500px;
+    margin-right: 150px;
+    
+}
+span a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+}
+span a:hover{
+    text-decoration: none;
+    color: red;
+    
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.textos-header{
+    height: 430px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.textos-header h1{
+    color: #fff;
+    font-size: 50px;
+    
+    text-shadow: 2px 2px 2px black;
+}
+
+/*CONOCENOS*/
+.contenedor-conocenos {
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+}
+
+#verMas{
+    background-color: hsl(355, 95%, 50%);
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+.contenedor{
+    display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+    
+}
+.contenedor div{
+    margin: 0 50px ;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 black;
+    padding: 10px;
+}
+.contenedor div p{
+    text-align: justify;
+    margin: 10px;
+}
+/*PERSONL TECNICO*/
+
+.personal-tecnico{
+    height: 800px;
+    background-color: rgba(56, 45, 45, 0.26);
+    padding: 50px;
+}
+.contenedor-personas{
+    display: flex;
+    width: 600px;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+
+.contenedor-personas div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex: 1 0px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
+  
+}
+.contenedor-personas div img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+.contenedor-personas div h3{
+    color: #220a8f;;
+}
+
+#ultima-imagen{
+    border-bottom: 0px;
+}
+/*SERVICIOS*/
+.Servicios{
+    height: 500px;
+    overflow: hidden;
+    padding: 50px;
+}
+
+.contenedor-servicios{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    
+}
+
+.contenedor-servicios img{
+    width: 250px;
+}
+#drone-real{
+    width: 150px;
+    position: relative;
+    bottom: 300px;
+    left: 680px;
+    z-index: 100;
+    
+}
+/*CLIENES*/
+
+.clientes{
+    height: 500px;
+    
+}
+.clientes div{
+    height: 300px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    border-radius: 20px;
+    box-shadow: 0 0 10px  black;
+
+}
+.clientes div img{
+    width: 100px;
+    margin: 20px;
+}
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px;
+}
+.responsive{
+    display: none;
+}
+.contenedor-footer {
+    color: #fff;
+}
+.contenedor-footer p{
+    margin: 5px;
+}
+.logo_responsive{
+    float: right;
+}
+.logo_responsive > a{
+    padding: 5px;
+}
+.menu_responsive{
+    position: relative;
+    background-color: black;
+    width: 50%;
+    height: 100%;
+
+}
+.fa{
+    color: #fff;
+}
+.menu_responsive > a{
+    display: block;
+}
+
+
+
+ @media only screen and (max-width: 600px){
+.responsive{
+    display: block;
+}
+    .contenedor{
+        display: block;
+        margin-top: 100px;
+        margin-bottom: 50px;
+ }
+ .menu {
+     display: none;
+ }
+ header{
+     height: 500px;
+     
+ }
+ .textos-header h1{
+    color: #fff;
+    font-size: 25px;
+ }
+ .contenedor-conocenos {
+    justify-content: center;
+    text-align: center;
+    height: 900px;
+}
+div.mision{
+    margin-bottom: 30px;
+}
+.contenedor-personas{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 150px;
+}
+
+}

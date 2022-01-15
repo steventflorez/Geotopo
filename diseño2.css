@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hambu{
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    font-size: 20px;
+    box-shadow: 0 1px 10px 0 black;
+    z-index: 1;
+}
+.sombra{
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,.7);
+    bottom: 0;
+    top: 38px;
+    right: 0;
+    left: 0;
+}
+#check{
+    display: none;
+}
+
+.menu{
+    background-color: aqua;
+    padding: 10px;
+    position: fixed;
+    width: 150px;
+    bottom: 0;
+    top: 38px;
+    left: -250px;
+    transition: all 1s;
+    
+}
+
+#check:checked + .menu{
+    left: 0;
+}
+#check:checked + .sombra{
+    display: block;
+}
+main{
+    height: 1400px;
+    background-color: blue;
+}
